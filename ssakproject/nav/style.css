@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+
+div.logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+span.logo-container > i {
+  font-size: 2rem;
+  padding: 8px;
+  color: greenyellow;
+}
+
+h1.name {
+  font-size: 2rem;
+  padding: 8px;
+  color: white;
+}
+
+ul.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li.menu > button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+}
+
+span.hamberger {
+  display: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* 노트북 기준 */
+@media screen and (max-width: 992px) {
+  span.logo-container > i {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  h1.name {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  li.menu > button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
+
+/* 모바일 기준 */
+@media screen and (max-width: 576px) {
+  ul.menu-list {
+    display: none;
+  }
+
+  span.hamberger {
+    display: inline;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+  }
+}

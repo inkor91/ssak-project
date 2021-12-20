@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "BMEuljiro10yearslater";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --backgound-blue: #82cbf6;
+  --background-white: #f9f9f9;
+  --border-gray: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--backgound-blue);
+  font-family: "BMEuljiro10yearslater";
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-white);
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 70%;
+  border-radius: 5px;
+  box-shadow: 0, 0, 10px var(--border-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+section#contents {
+  width: 100%;
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#insert-container {
+  border: 1px solid var(--border-gray);
+  box-shadow: 0, 0, 10px var(--border-gray);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+div#insert-container input#input-todo {
+  width: 100%;
+  border: none;
+  line-height: 3;
+  padding-left: 1rem;
+}
+
+div#insert-container i#create-todo {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 1rem;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+ul#todo-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+  border: 1px solid var(--border-gray);
+  box-shadow: 0, 0, 10px var(--border-gray);
+}
+
+ul#todo-list li.todo-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border: 1px solid var(--border-gray);
+  box-shadow: 0, 0, 10px var(--border-gray);
+  padding: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+span.check-text-container {
+  display: flex;
+  align-items: center;
+}
+
+span.check-text-container p.todo-text {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+span.update-delete-container i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+p.done {
+  text-decoration: line-through;
+}
